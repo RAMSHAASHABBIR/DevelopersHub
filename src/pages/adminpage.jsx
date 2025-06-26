@@ -84,7 +84,7 @@ export default function AdminPage() {
         {/* Product Form */}
         <form className="bg-secondary p-4 rounded shadow mb-5" onSubmit={handleAddOrUpdate}>
           <h4 className="mb-4">{editId ? 'Edit Product' : 'Add New Product'}</h4>
-
+<label className="form-label text-light">Name</label>
           <input
             type="text"
             className="form-control mb-3 bg-dark text-light border-0"
@@ -94,6 +94,7 @@ export default function AdminPage() {
             onChange={(e) => setForm({ ...form, name: e.target.value })}
           />
 
+<label className="form-label text-light">Price</label>
           <input
             type="number"
             className="form-control mb-3 bg-dark text-light border-0"
@@ -102,7 +103,7 @@ export default function AdminPage() {
             value={form.price}
             onChange={(e) => setForm({ ...form, price: e.target.value })}
           />
-
+<label className="form-label text-light">Image</label>
           <input
             type="text"
             className="form-control mb-3 bg-dark text-light border-0"
@@ -111,7 +112,7 @@ export default function AdminPage() {
             value={form.image}
             onChange={(e) => setForm({ ...form, image: e.target.value })}
           />
-
+<label className="form-label text-light">Category</label>
           <input
             type="text"
             className="form-control mb-3 bg-dark text-light border-0"
@@ -120,7 +121,7 @@ export default function AdminPage() {
             value={form.category}
             onChange={(e) => setForm({ ...form, category: e.target.value })}
           />
-
+<label className="form-label text-light">Description</label>
           <input
             type="text"
             className="form-control mb-3 bg-dark text-light border-0"
@@ -129,7 +130,7 @@ export default function AdminPage() {
             value={form.description}
             onChange={(e) => setForm({ ...form, description: e.target.value })}
           />
-
+<label className="form-label text-light">Stock</label>
           <input
             type="number"
             className="form-control mb-4 bg-dark text-light border-0"
